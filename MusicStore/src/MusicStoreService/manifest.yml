@@ -2,6 +2,7 @@
 applications:
 - name: musicstore
   buildpack: dotnet_core_buildpack
+  random-route: true
   memory: 256M
   env:
     ASPNETCORE_ENVIRONMENT: Production
