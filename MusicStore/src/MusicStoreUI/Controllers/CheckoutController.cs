@@ -71,8 +71,9 @@ namespace MusicStoreUI.Controllers
                     return RedirectToAction("Complete", new { id = orderId });
                 }
             }
-            catch
+            catch(Exception ex)
             {
+                Console.WriteLine(ex.ToString());
                 //Invalid - redisplay with errors
                 return View(order);
             }
